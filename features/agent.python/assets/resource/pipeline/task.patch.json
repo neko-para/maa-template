@@ -1,0 +1,12 @@
+[
+    {
+        "op": "add",
+        "path": "/MyTask4",
+        "value": {
+            "recognition": "Custom",
+            "custom_recognition": "my_reco_222",
+            "action": "Custom",
+            "custom_action": "my_action_111"
+        }
+    }
+]

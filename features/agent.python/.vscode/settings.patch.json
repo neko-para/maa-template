@@ -1,0 +1,9 @@
+[
+    {
+        "op": "add",
+        "path": "/[python]",
+        "value": {
+            "editor.defaultFormatter": "ms-python.black-formatter"
+        }
+    }
+]

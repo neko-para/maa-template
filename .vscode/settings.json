@@ -1,0 +1,10 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/**/*.patch.json",
+            ],
+            "url": "/schema/json-patch.json"
+        },
+    ],
+}
