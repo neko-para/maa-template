@@ -1,0 +1,22 @@
+{
+    "features": [
+        {
+            "name": "agent",
+            "type": "single",
+            "default": "none",
+            "choices": [
+                {
+                    "name": "none",
+                    "desc": "No agent"
+                },
+                {
+                    "name": "python",
+                    "desc": "Use python as agent",
+                    "apply": [
+                        "agent.python"
+                    ]
+                }
+            ]
+        }
+    ]
+}
