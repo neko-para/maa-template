@@ -11,7 +11,6 @@ index 822f338..020dee4 100644
 +        "ms-python.black-formatter"
      ]
  }
-\ No newline at end of file
 diff --git a/.vscode/settings.json b/.vscode/settings.json
 index 2c5e125..bba0394 100644
 --- a/.vscode/settings.json
