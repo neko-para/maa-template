@@ -3,9 +3,10 @@
 		"type": "process",
 		"command": [
 			"npm",
-			"install",
-			"--prefix",
-			"./"
-		]
+			"install"
+		],
+		"env": {
+			"SKIP_PREFLIGHT_CHECK": "1"
+		}
 	}
 ]
