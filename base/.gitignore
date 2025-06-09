@@ -5,3 +5,4 @@ deps
 install
 
 tools/ImageCropper/**/*.png
+node_modules

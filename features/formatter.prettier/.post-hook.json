@@ -1,0 +1,9 @@
+[
+	{
+		"type": "process",
+		"command": [
+			"npm",
+			"install"
+		]
+	}
+]

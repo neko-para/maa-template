@@ -17,6 +17,34 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "github",
+            "type": "multi",
+            "default": [],
+            "choices": [
+                {
+                    "name": "issue",
+                    "desc": "Add issue templates",
+                    "apply": [
+                        "github.issue"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "formatter",
+            "type": "multi",
+            "default": [],
+            "choices": [
+                {
+                    "name": "prettier",
+                    "desc": "Use prettier to format json & yaml",
+                    "apply": [
+                        "formatter.prettier"
+                    ]
+                }
+            ]
         }
     ]
 }
