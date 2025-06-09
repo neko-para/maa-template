@@ -1,0 +1,69 @@
+diff --git a/.vscode/extensions.json b/.vscode/extensions.json
+index 822f338..020dee4 100644
+--- a/.vscode/extensions.json
++++ b/.vscode/extensions.json
+@@ -1,6 +1,7 @@
+ {
+     "recommendations": [
+         "nekosu.maa-support",
+-        "davidanson.vscode-markdownlint"
++        "davidanson.vscode-markdownlint",
++        "ms-python.black-formatter"
+     ]
+ }
+\ No newline at end of file
+diff --git a/.vscode/settings.json b/.vscode/settings.json
+index 2c5e125..bba0394 100644
+--- a/.vscode/settings.json
++++ b/.vscode/settings.json
+@@ -27,5 +27,8 @@
+         "editor.insertSpaces": true,
+         "editor.tabSize": 4,
+         "editor.indentSize": "tabSize"
++    },
++    "[python]": {
++        "editor.defaultFormatter": "ms-python.black-formatter"
+     }
+ }
+diff --git a/assets/interface.json b/assets/interface.json
+index 30e1352..5b7f27b 100644
+--- a/assets/interface.json
++++ b/assets/interface.json
+@@ -47,6 +47,10 @@
+                 "任务选项1"
+             ],
+             "pipeline_override": {}
++        },
++        {
++            "name": "带Custom的任务",
++            "entry": "MyTask4"
+         }
+     ],
+     "option": {
+@@ -70,5 +74,9 @@
+                 }
+             ]
+         }
++    },
++    "agent": {
++        "child_exec": "python",
++        "child_args": ["{PROJECT_DIR}/agent/main.py"]
+     }
+ }
+diff --git a/assets/resource/pipeline/task.json b/assets/resource/pipeline/task.json
+index 84ff39a..0529c8f 100644
+--- a/assets/resource/pipeline/task.json
++++ b/assets/resource/pipeline/task.json
+@@ -1,5 +1,11 @@
+ {
+     "MyTask1": {},
+     "MyTask2": {},
+-    "MyTask3": {}
++    "MyTask3": {},
++    "MyTask4": {
++        "recognition": "Custom",
++        "custom_recognition": "my_reco_222",
++        "action": "Custom",
++        "custom_action": "my_action_111"
++    }
+ }
