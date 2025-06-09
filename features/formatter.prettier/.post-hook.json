@@ -3,7 +3,9 @@
 		"type": "process",
 		"command": [
 			"npm",
-			"install"
+			"install",
+			"--prefix",
+			"./"
 		]
 	}
 ]
