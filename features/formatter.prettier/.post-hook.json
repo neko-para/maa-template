@@ -4,6 +4,9 @@
 		"command": [
 			"npm",
 			"install"
-		]
+		],
+		"env": {
+			"SKIP_PREFLIGHT_CHECK": "1"
+		}
 	}
 ]
