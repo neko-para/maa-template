@@ -1,7 +1,0 @@
-[
-    {
-        "op": "add",
-        "path": "/recommendations/-",
-        "value": "ms-python.black-formatter"
-    }
-]
