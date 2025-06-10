@@ -2,8 +2,11 @@
 	{
 		"type": "process",
 		"command": [
-			"npm",
-			"install"
+			"${nodejs.packageManager}",
+			"install",
+			"-D",
+			"prettier",
+			"prettier-plugin-multiline-arrays"
 		],
 		"env": {
 			"SKIP_PREFLIGHT_CHECK": "1"

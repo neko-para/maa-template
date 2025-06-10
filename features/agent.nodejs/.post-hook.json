@@ -1,0 +1,17 @@
+[
+    {
+        "type": "process",
+        "command": [
+            "${nodejs.packageManager}",
+            "install",
+            "-D",
+            "@tsconfig/node20",
+            "@types/node@^20",
+            "@maaxyz/maa-node",
+            "tsx"
+        ],
+        "env": {
+            "SKIP_PREFLIGHT_CHECK": "1"
+        }
+    }
+]

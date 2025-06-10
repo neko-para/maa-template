@@ -1,4 +1,7 @@
 {
+    "var": [
+        "nodejs.packageManager=npm"
+    ],
     "features": [
         {
             "name": "agent",
@@ -13,7 +16,36 @@
                     "name": "python",
                     "desc": "Use python as agent",
                     "apply": [
-                        "agent.python"
+                        "feat:agent.python"
+                    ]
+                },
+                {
+                    "name": "nodejs",
+                    "desc": "Use nodejs as agent",
+                    "apply": [
+                        "feat:agent.nodejs"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "packageManager",
+            "type": "single",
+            "require": "features.agent === 'nodejs'",
+            "default": "npm",
+            "choices": [
+                {
+                    "name": "npm",
+                    "desc": "Use npm as package manager",
+                    "apply": [
+                        "var:nodejs.packageManager=npm"
+                    ]
+                },
+                {
+                    "name": "pnpm",
+                    "desc": "Use pnpm as package manager",
+                    "apply": [
+                        "var:nodejs.packageManager=pnpm"
                     ]
                 }
             ]
@@ -27,14 +59,14 @@
                     "name": "issue",
                     "desc": "Add issue templates",
                     "apply": [
-                        "github.issue"
+                        "feat:github.issue"
                     ]
                 },
                 {
                     "name": "prettier",
                     "desc": "Use prettier to format json & yaml",
                     "apply": [
-                        "formatter.prettier"
+                        "feat:formatter.prettier"
                     ]
                 }
             ]
