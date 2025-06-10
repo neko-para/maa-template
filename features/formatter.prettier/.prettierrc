@@ -29,6 +29,16 @@
                 "useTabs": true,
                 "bracketSameLine": false
             }
+        },
+        {
+            "files": [
+                "**.ts",
+                "**.js"
+            ],
+            "options": {
+                "tabWidth": 2,
+                "semi": false
+            }
         }
     ]
 }
