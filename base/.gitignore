@@ -3,7 +3,7 @@ config
 debug
 deps
 install
+ui
 
 tools/ImageCropper/**/*.png
 node_modules
-MFAAvalonia
