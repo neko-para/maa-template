@@ -1,8 +1,8 @@
 diff --git a/.vscode/settings.json b/.vscode/settings.json
-index 2c5e125..bba0394 100644
+index 2c5e125..2f22f17 100644
 --- a/.vscode/settings.json
 +++ b/.vscode/settings.json
-@@ -27,5 +27,8 @@
+@@ -27,5 +27,11 @@
          "editor.insertSpaces": true,
          "editor.tabSize": 4,
          "editor.indentSize": "tabSize"
@@ -15,7 +15,7 @@ index 2c5e125..bba0394 100644
      }
  }
 diff --git a/assets/interface.json b/assets/interface.json
-index 30e1352..5b7f27b 100644
+index 30e1352..c1714db 100644
 --- a/assets/interface.json
 +++ b/assets/interface.json
 @@ -47,6 +47,10 @@
